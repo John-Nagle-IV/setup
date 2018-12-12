@@ -1,0 +1,6 @@
+#AUTO_COLOR exported in bashrc
+alias ll="ls -alh $AUTO_COLOR" 
+alias ls="ls $AUTO_COLOR"
+alias grep="grep $AUTO_COLOR"
+alias fgrep="fgrep $AUTO_COLOR"
+alias egrep="egrep $AUTO_COLOR"
