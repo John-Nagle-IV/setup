@@ -20,4 +20,4 @@ link_dotfile 'vimrc'
 link_dotfile 'bashrc'
 link_dotfile 'bash_aliases'
 
-source "$HOME/.bashrc"
+source "$SETUP_ROOT/dotfiles/bashrc"
