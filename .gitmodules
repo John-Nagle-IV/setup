@@ -1,9 +1,12 @@
 [submodule "dotfiles/vim/bundle/ctrlp.vim"]
 	path = dotfiles/vim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
-[submodule "dwm/dmenu"]
-	path = dwm/dmenu
+[submodule "src/st"]
+	path = src/st
+	url = git://git.suckless.org/st
+[submodule "src/dwm"]
+	path = src/dwm
+	url = git://git.suckless.org/dwm
+[submodule "src/dmenu"]
+	path = src/dmenu
 	url = https://git.suckless.org/dmenu
-[submodule "dwm/dwm"]
-	path = dwm/dwm
-	url = https://git.suckless.org/dwm
