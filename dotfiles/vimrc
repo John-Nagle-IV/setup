@@ -1,11 +1,25 @@
 " Dont act like VI
     set nocompatible
+" For Vundle
+    filetype off
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+    Plugin 'VundleVim/Vundle.vim'
+    Plugin 'fatih/vim-go'
+    call vundle#end()
+    filetype plugin indent on
+
+    let g:go_def_mode='gopls'
+    let g:go_info_mode='gopls'
 
 " Do things based on file types
     filetype plugin on
 
 " Auto complete
     set wildmode=longest,list,full
+
+" Jedi-Vim
+    set runtimepath^=~/.vim/bundle/jedi-vim
 
 " CTRL-P Setup
     set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -14,7 +28,7 @@
     let g:ctrlp_user_command = 'find %s -type f'
     let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
     let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-    set wildignore+=*/tmp/*,*.so,*.swp,*.zip 
+    set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " Colors
     set t_Co=256
@@ -37,6 +51,7 @@
 " Other
     set hidden
     set number
+    set relativenumber
     set splitbelow splitright
 
 " Delete trailing whitespace
